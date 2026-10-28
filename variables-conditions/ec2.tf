@@ -1,5 +1,5 @@
 
-resource "aws_instance" "example" {
+resource "aws_instance" "roboshop" {
   ami                    = var.ami_id
   instance_type          = var.environment == "qa" ? var.instance_type : "t2.medium"
   vpc_security_group_ids = [aws_security_group.allow_all.id]
