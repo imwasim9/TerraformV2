@@ -21,11 +21,3 @@ data "aws_ami" "joindevops" {
 output "ami_id" {
     value = data.aws_ami.joindevops.id
 }
-
-data "aws_instance" "Terraform" {
-    instance_id = "i-007743722c4229efd"
-}
-
-output "Terraform" {
-    value = data.aws_instance.Terraform.public_ip
-}
