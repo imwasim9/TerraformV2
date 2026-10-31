@@ -1,3 +1,3 @@
-output "instance_ouput" {
-  value = aws_instance.terraform
-}
+# output "instance_ouput" {
+#   value = aws_instance.terraform
+# }

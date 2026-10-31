@@ -1,6 +1,7 @@
 
 resource "aws_instance" "terraform" {
   for_each = toset(var.instances)
+  # for_each = var.instances
   # count = 4
   ami                    = var.ami_id
   instance_type          = var.instance_type
